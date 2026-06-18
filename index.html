@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
- body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
 
 <body>
     <div class="outer">
-    <h1>Hii User,Welcome to the app </h1>
-    <form action="/addUser" method="post" target="_blank" id="signUpForm">
-        <div class="field">
-            <label for="email">Email:</label>
-            <input placeholder="kumarisarti40432@gmail.com" type="text" name="email">
-        </div>
-        <br>
-         <div class="field">
-            <label for="username">username:</label>
-            <input placeholder="enter username" type="text" name="username">
-        </div>
-        <br>
-         <div class="field">
-            <label for="password">password:</label>
-            <input placeholder="enter password" type="password" name="password">
-        </div>
-        <br>
-        <button id="fromButton" onclick="resetForm()"> Signup</button>
+        <h1>Hii User,Welcome to the app </h1>
+        <form action="/addUser" method="post" target="_blank" id="signUpForm">
+            <div class="field">
+                <label for="email">Email:</label>
+                <input placeholder="kumarisarti40432@gmail.com" type="text" name="email">
+            </div>
+            <br>
+            <div class="field">
+                <label for="username">username:</label>
+                <input placeholder="enter username" type="text" name="username">
+            </div>
+            <br>
+            <div class="field">
+                <label for="password">password:</label>
+                <input placeholder="enter password" type="password" name="password">
+            </div>
+            <br>
+            <button id="fromButton"> Signup</button>
 
     </div>
     </form>
     <script>
-        function resetForm(){
-            let myForm=document.querySelector("#signUpForm");
-            console.log("hii",myForm);
+        function resetForm() {
+            let myForm = document.querySelector("#signUpForm");
+            console.log("hii", myForm);
             myForm.reset();
             return false;
         }
     </script>
-    
+
 </body>
+
 </html>

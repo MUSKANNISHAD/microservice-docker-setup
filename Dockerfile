@@ -7,4 +7,4 @@ RUN mkdir -p docker/nodeapp
 
 COPY . /docker/nodeapp
 
-CMD ["node","/docker/nodeapp/server.js"]
+CMD ["node","/docker/nodeapp/app.js"]
